@@ -1,0 +1,166 @@
+body {
+    background-color: red;
+    margin: 0px;
+    padding-top: 0px;
+}
+#container {
+    width: 1024px;
+    height: auto;
+    margin: auto;
+    background-image: url("di7s03.jpg");
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+    "header header header header header header"
+
+    "service service service ... ... ..."
+
+    "... construction construction construction ... ..."
+
+    "... ... retail retail retail ..."
+
+    "... ethics ethics ethics ... ..."
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: 0px;
+    margin-left: 360px;
+}
+
+#topimg {
+    width: 70px;
+    height: 70px;
+    border-radius: 40%;
+    margin-bottom: 0px;
+    -webkit-transform:rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+#bio {
+    width: auto;
+    height:auto;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.sectionimg {
+    width: 70px;
+    height:70px;
+    border-radius: 50%;
+}
+
+#history {
+    width: 500px;
+    display: flex;
+}
+
+p {
+    color: yellow;
+    width: 400px;
+}
+
+#historyc {
+    width: 500px;
+    display: flex;
+}
+
+#historyr {
+    width: 500px;
+    display: flex;
+}
+
+#historym {
+    width: 500px;
+    display: flex;
+}
+
+header {
+    grid-area: header;
+}
+
+#construction {
+    grid-area: construction;
+}
+
+#navy {
+    grid-area: service;
+}
+
+#retail {
+    grid-area: retail;
+}
+
+#ethics {
+    grid-area: ethics;
+}
+
+@media (max-width: 1024px) {
+    body {
+        background-color: white;
+    }
+
+    #container {
+        width: 768px;
+        height: auto;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: 
+        "header header header"
+
+        "service service service"
+
+        "construction construction construction"
+
+        "retail retail retail"
+
+        "ethics ethics ethics"
+    }
+    h1 {
+        margin-left: 190px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background: blue;
+    }
+    #contanier {
+    width: 500px;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+    "header header"
+
+    "service service"
+
+    "construction construction"
+
+    "retail retail"
+
+    "ethics ethics"
+    }
+
+    h1 {
+        margin-left: 0px;
+    }
+
+    #bio {
+        width: auto;
+        height:auto;
+        display: flex;
+        justify-content: left;
+    }
+}
